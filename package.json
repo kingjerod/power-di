@@ -1,0 +1,11 @@
+{
+  "name": "power-di",
+  "version": "0.1.0",
+  "description": "Auto wiring di container for NodeJS. Almost no configuration, no annotations.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jerod King",
+  "license": "MIT"
+}
