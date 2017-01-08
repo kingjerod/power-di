@@ -35,12 +35,12 @@ class Util {
   }
 
   /**
-   * Changes a string from appleOrangeYes -> apple-orange-yes
+   * Changes a string from appleOrange2 -> apple-orange-2
    * @param str
    * @returns {string}
    */
   kebabCase(str) {
-    return str.replace(/[A-Z]+/g, function (match) {
+    return str.replace(/[A-Z0-9]+/g, function (match) {
       return '-' + match.toLowerCase();
     });
   }

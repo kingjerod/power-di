@@ -13,6 +13,7 @@ class UserController {
         this.UserService.create({email: email, password: password});
     }
 }
+module.exports = UserController;
 ```
 ```javascript
 /* src/services/user.js */
@@ -26,6 +27,7 @@ class UserService {
         // ...
     }
 }
+module.exports = UserService;
 ```
 ```javascript
 /* src/index.js */
@@ -57,7 +59,7 @@ let container = new Container();
 ```
 
 #### Classes
-For classes, the dependency name will be taken from the class name. If you want to override the name, you can specify `depName` in the module.exports. Normally you would do `container.get('Dog')`, but after over riding it you would do `container.get('Wolf')`:
+For classes, the dependency name will be taken from the class name. If you want to override the name, you can specify `depName` in the module.exports. Normally you would do `container.get('Dog')`, but after overriding it you would do `container.get('Wolf')`:
 
 ```javascript
 class Dog {
@@ -100,6 +102,7 @@ class Database {
         this.pass = Config.db.pass;
     }
 }
+module.exports = Database;
 ```
 
 Using addConstant():
